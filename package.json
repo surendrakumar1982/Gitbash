@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "start": "cypress run",
+    "lint": "eslint .",
+    "pretty": "prettier --write \"./**/*.{js,ts,tsx,json}\"",
+    "precommit": "npm run pretty && npm run lint"
+  },
+  "devDependencies": {
+    "cypress": "^13.1.0",
+    "cypress-mochawesome-reporter": "^3.6.0",
+    "cypress-multi-reporters": "^1.6.3",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "eslint-plugin-cypress": "^2.15.1",
+    "prettier": "^3.0.3",
+    "simple-encryptor": "^4.0.0"
+  }
+}
